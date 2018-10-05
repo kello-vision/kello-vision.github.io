@@ -130,9 +130,11 @@ nav a:focus{
 	max-width: 400px;
   }
 
-  #footer_icons{
+#footer_fontawesome_icons li{
 	font-size: 2em;
 	text-align: center;
+	display: inline;
+	padding: 1%;
   }
 
   /* Font Awesome Classes And Style*/
