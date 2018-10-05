@@ -61,6 +61,11 @@ h2{
 	font-family: 'Raleway', sans-serif;
 }
 
+h3{
+	padding: .75em;
+	font-family: 'Raleway', sans-serif;
+}
+
 body{
 	background-color:#FBFCFF;
 	text-align: center;
@@ -90,6 +95,28 @@ nav a{
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
 }
+
+nav a:active{
+	color: #573697;
+}
+
+nav a:focus{
+	text-decoration: underline;
+	color: #573697;
+}
+
+.resume a {
+	text-decoration: none;
+	font-size: 20px; 
+	font-style: bold; 
+	font-variant: normal; 
+	font-weight: 400; 
+	line-height: 20px; 
+	padding: 5em;
+	
+}
+
+/*Grid Display Style*/
 
 .selected-work{
 	display: grid;
