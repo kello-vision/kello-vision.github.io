@@ -2,15 +2,15 @@
 	margin: 0px;
 	padding: 0px;
 }
+/* GENERAL */
 
-.big_wrapper{
-	display: grid;
-	grid-gap: 20px;
-	grid-template-areas:
-		"header"
-		"nav"
-		"content"
-		"footer";
+.home-page-features{
+	display: inline-block;
+	position: relative;
+	padding-bottom: 7.5em;
+	padding-left: 6.72em;
+	padding-right: 6.72em;
+
 }
 
 .background-image{
@@ -18,67 +18,72 @@
 	width: 100%;
 }
 
-.main-head{
-	grid-area: header;
-	padding: 20px;
-}
-
-.content{
-	grid-area: content;
-}
-
-.main-nav{
-	display: grid;
-	grid-area: nav;
-}
-
-.main-footer{
-	grid-area: footer;
-}
-
 .main-nav li{
 	text-decoration: none;
 	display: inline-block;
 	list-style: none;
-	padding: 1%;
+	padding: 1.75em 0;
 	color: black;
 }
 
 /* Text Styles Go Here*/
 
 h1{
-	font-family: 'Raleway', sans-serif;
-	font-size: 49px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 700; 
-	line-height: 53.9px;
-	padding: .25em;
+	font-family:Muli-Bold;
+	font-size:48px;
+	color:#24262f;
+	letter-spacing:0;
+	text-align:center;
+	line-height:56px;
 }
 
 h2{
 	padding: .5em;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Muli-Bold', sans-serif;
+	font-size:30px;
+	color:#24262f;
+	letter-spacing:0;
+	text-align:center;
 }
 
 h3{
 	padding: .75em;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Muli', sans-serif;
 }
 
 body{
 	background-color:#FBFCFF;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Muli', sans-serif;
 }
 
 p{
-	font-size: 14px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 400; 
-	line-height: 20px; 
+	font-family:Muli;
+	font-size:16px;
+	color:#24262f;
+	letter-spacing:0;
+	text-align:center;
+	line-height:24px;
+	line-height: 24px; 
 	padding: 2em;
+}
+
+/* TEXT FORMATTING */
+
+.h1-text-container{
+	width: 100%;
+  	padding: 0;
+  	max-width: 960px;
+  	margin: 0 auto;
+}
+
+.h1-hero-text{
+	padding: 7.5em 7.88em; 
+}
+
+.h1-hero-text h1{
+	margin: auto;
+	max-width: 857px;
 }
 
 /* Anchor Links */
@@ -92,8 +97,13 @@ nav a:hover{
 }
 
 nav a{
+	padding: 1.75em 3.75em;
 	text-decoration: none;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Muli-Light', sans-serif;
+	font-size:18px;
+	color:#24262f;
+	letter-spacing:0;
+	text-align:center;
 }
 
 nav a:active{
@@ -130,11 +140,13 @@ nav a:focus{
 	max-width: 400px;
   }
 
+  /* Font Awesome Classes And Style*/
+
 #footer_fontawesome_icons li{
 	font-size: 2em;
 	text-align: center;
 	display: inline;
-	padding: 1%;
+	padding-bottom: 1.75em;
+	padding-left: 1em;
+	padding-right: 1em;
   }
-
-  /* Font Awesome Classes And Style*/
