@@ -2,28 +2,77 @@
 	margin: 0px;
 	padding: 0px;
 }
+
+img {
+	max-width: 100%;
+  }
+
+
 /* GENERAL */
 
-.home-page-features{
+.wrapper{
+	display: grid;
+	grid-gap: 20px;
+}
+
+.top {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+	  "hero hero hero"
+	  "cta1 cta2"
+  }
+
+.hero {
+	grid-area:hero;
+}
+
+.cta1 {
+	grid-area: cta1;
+}
+
+.cta2{
+	grid-area: cta2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ux-page-feature{
 	display: inline-block;
 	position: relative;
+	width: 25em;
 	padding-bottom: 7.5em;
 	padding-left: 6.72em;
 	padding-right: 6.72em;
-
 }
 
-.background-image{
-	background-image: url("../images/white-wall.jpg");
-	width: 100%;
-}
-
-.main-nav li{
-	text-decoration: none;
-	display: inline-block;
+.main-nav ul{
+	display: grid;
+	grid-gap: 10px;
+	padding: 1%;
 	list-style: none;
-	padding: 1.75em 0;
-	color: black;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.main-nav a {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
 }
 
 /* Text Styles Go Here*/
@@ -68,24 +117,6 @@ p{
 	padding: 2em;
 }
 
-/* TEXT FORMATTING */
-
-.h1-text-container{
-	width: 100%;
-  	padding: 0;
-  	max-width: 960px;
-  	margin: 0 auto;
-}
-
-.h1-hero-text{
-	padding: 7.5em 7.88em; 
-}
-
-.h1-hero-text h1{
-	margin: auto;
-	max-width: 857px;
-}
-
 /* Anchor Links */
 
 a {
@@ -115,18 +146,7 @@ nav a:focus{
 	color: #573697;
 }
 
-.resume a {
-	text-decoration: none;
-	font-size: 20px; 
-	font-style: bold; 
-	font-variant: normal; 
-	font-weight: 400; 
-	line-height: 20px; 
-	padding: 5em;
-	
-}
-
-/*Grid Display Style*/
+/*Grid Display Style for selected work page*/
 
 .selected-work{
 	display: grid;
