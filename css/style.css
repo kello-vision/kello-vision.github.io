@@ -229,3 +229,41 @@ nav a:focus{
 		"image6"
 	  }
   }
+
+  /* LANDSCAPE ORIENTATION FOR PHONES */
+
+  @media only screen and (min-width: 480px) and (max-width: 640px) and (orientation: landscape) {
+	/* GENERAL */
+	.hero {
+		grid-template-columns: 1fr;
+	}
+	.hero h1{
+		font-size: 22px;
+	}
+
+	/* HOME PAGE */
+	.top-home {
+	  grid-template-areas:
+		"cta1 cta2"
+	}
+
+	/* UX RESEARCH PAGE */
+	.top-uxresearch {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-areas:
+			"cta1 cta2"
+			"cta3 cta3"
+	}
+	/* UI RESEARCH PAGE */
+	.gallery {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-areas: 
+		"image1 image2"
+		"image3 image4"
+		"image5 image6"
+	  }
+
+
+}
