@@ -54,15 +54,6 @@ img {
 	grid-area: cta3;
 }
 
-#ux-page-feature{
-	display: inline-block;
-	position: relative;
-	width: 25em;
-	padding-bottom: 7.5em;
-	padding-left: 6.72em;
-	padding-right: 6.72em;
-}
-
 .main-nav ul{
 	display: grid;
 	grid-gap: 10px;
@@ -162,20 +153,6 @@ nav a:focus{
 	width: 100%;
 }
 
-/*Grid Display Style for selected work page*/
-
-.selected-work{
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 200px;
-}
-
-.selected-work-display img {
-	margin-top: 8px;
-	vertical-align: middle;
-	max-width: 400px;
-  }
-
   /* Font Awesome Classes And Style*/
 
 #footer_fontawesome_icons li{
@@ -186,10 +163,24 @@ nav a:focus{
   }
 
   @media (max-width: 700px) {
+	  /* GENERAL */
+	  .hero {
+		grid-template-columns: 1fr;
+	}
+	/* HOME PAGE */
 	.top-home {
 	  grid-template-areas:
 		"cta1 cta2"
 	}
+	/* UX RESEARCH PAGE */
+	.top-uxresearch {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-areas:
+			"cta1 cta2" 
+			"cta3 cta3"
+	}
+	/* UI RESEARCH PAGE */
 	.gallery {
 		display: grid;
 		grid-gap: 20px;
@@ -200,13 +191,7 @@ nav a:focus{
 	  }
   
   @media (max-width: 500px) {
-	/* HOME PAGE */
-	.top-home {
-	  grid-template-areas:
-		"cta1"
-		"cta2"
-	}
-
+	/* GENERAL */
 	.hero {
 		grid-template-columns: 1fr;
 	}
@@ -214,6 +199,23 @@ nav a:focus{
 		font-size: 22px;
 	}
 
+	/* HOME PAGE */
+	.top-home {
+	  grid-template-areas:
+		"cta1"
+		"cta2"
+	}
+
+	/* UX RESEARCH PAGE */
+	.top-uxresearch {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-areas:
+			"cta1" 
+			"cta2"
+			"cta3"
+	}
+	/* UI RESEARCH PAGE */
 	.gallery {
 		display: grid;
 		grid-gap: 20px;
