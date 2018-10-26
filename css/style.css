@@ -14,7 +14,7 @@ img {
 	grid-gap: 20px;
 }
 
-.top {
+.top-home {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-areas:
@@ -134,6 +134,19 @@ nav a:focus{
 	color: #573697;
 }
 
+/* IMAGE GALLERY */
+.gallery {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+	"image1 image2 image3"
+	"image4 image5 image6"
+  }
+  
+.image{
+	width: 100%;
+}
+
 /*Grid Display Style for selected work page*/
 
 .selected-work{
@@ -158,18 +171,22 @@ nav a:focus{
   }
 
   @media (max-width: 700px) {
-	.top {
+	.top-home {
 	  grid-template-areas:
 		"cta1 cta2"
 	}
-	/* About */
-	.about {
-	  grid-template-columns: 1fr;
-	}
-  }
+	.gallery {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-areas: 
+		"image1 image2"
+		"image3 image4"
+		"image5 image6"
+	  }
   
   @media (max-width: 500px) {
-	.top {
+	/* HOME PAGE */
+	.top-home {
 	  grid-template-areas:
 		"cta1"
 		"cta2"
@@ -181,4 +198,16 @@ nav a:focus{
 	.hero h1{
 		font-size: 22px;
 	}
+
+	.gallery {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-areas: 
+		"image1"
+		"image2"
+		"image3"
+		"image4"
+		"image5" 
+		"image6"
+	  }
   }
