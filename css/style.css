@@ -60,7 +60,8 @@ img {
 	grid-gap: 10px;
 	padding: 1%;
 	list-style: none;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-areas:
+		"li li li li"
 }
 
 .main-nav a {
@@ -198,6 +199,16 @@ nav a:focus{
 	}
 	.hero h1{
 		font-size: 22px;
+	}
+
+	.main-nav ul{
+		display: grid;
+		grid-gap: 10px;
+		padding: 1%;
+		list-style: none;
+		grid-template-areas:
+			"li li" 
+			"li li" 
 	}
 
 	/* HOME PAGE */
