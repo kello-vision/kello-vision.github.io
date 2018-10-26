@@ -72,7 +72,7 @@ img {
 /* Text Styles Go Here*/
 
 h1{
-	font-family:Muli-Bold;
+	font-family: 'Muli-Bold';
 	font-size:48px;
 	color:#24262f;
 	letter-spacing:0;
@@ -82,7 +82,7 @@ h1{
 
 h2{
 	padding: .5em;
-	font-family: 'Muli-Bold', sans-serif;
+	font-family: 'Muli-Bold';
 	font-size:30px;
 	color:#24262f;
 	letter-spacing:0;
@@ -91,17 +91,17 @@ h2{
 
 h3{
 	padding: .75em;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Muli';
 }
 
 body{
 	background-color:#FBFCFF;
 	text-align: center;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Muli';
 }
 
 p{
-	font-family:Muli;
+	font-family: 'Muli';
 	font-size:16px;
 	color:#24262f;
 	letter-spacing:0;
@@ -124,7 +124,7 @@ nav a:hover{
 nav a{
 	padding: 1.75em 3.75em;
 	text-decoration: none;
-	font-family: 'Muli-Light', sans-serif;
+	font-family: 'Muli-Light';
 	font-size:18px;
 	color:#24262f;
 	letter-spacing:0;
