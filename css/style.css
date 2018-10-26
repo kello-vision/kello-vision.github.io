@@ -25,7 +25,6 @@ img {
 	display: grid;
 	padding: 80px;
 	justify-content: center;
-	
 }
 
 .hero h1 {
@@ -174,5 +173,12 @@ nav a:focus{
 	  grid-template-areas:
 		"cta1"
 		"cta2"
+	}
+
+	.hero {
+		grid-template-columns: 1fr;
+	}
+	.hero h1{
+		font-size: 22px;
 	}
   }
