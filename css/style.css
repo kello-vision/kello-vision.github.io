@@ -169,6 +169,10 @@ nav a:focus{
 	  .hero {
 		grid-template-columns: 1fr;
 	}
+
+	.hero h1{
+		font-size: 40px;
+	}
 	/* HOME PAGE */
 	.top-home {
 	  grid-template-areas:
