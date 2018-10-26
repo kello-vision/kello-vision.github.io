@@ -21,6 +21,13 @@ img {
 	  "cta1 cta2"
   }
 
+.top-uxresearch {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+		"cta1 cta2 cta3"
+}
+
 .hero {
 	display: grid;
 	padding: 80px;
@@ -31,12 +38,20 @@ img {
 	max-width: 876px;
 }
 
+.cta {
+	padding: 40px 0px;
+}
+
 .cta1 {
 	grid-area: cta1;
 }
 
 .cta2 {
 	grid-area: cta2;
+}
+
+.cta3 {
+	grid-area: cta3;
 }
 
 #ux-page-feature{
