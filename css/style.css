@@ -7,7 +7,6 @@ img {
 	max-width: 100%;
   }
 
-
 /* GENERAL */
 
 .wrapper{
@@ -19,37 +18,27 @@ img {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-areas:
-	  "hero hero hero"
 	  "cta1 cta2"
   }
 
 .hero {
-	grid-area:hero;
+	display: grid;
+	padding: 80px;
+	justify-content: center;
+	
+}
+
+.hero h1 {
+	max-width: 876px;
 }
 
 .cta1 {
 	grid-area: cta1;
 }
 
-.cta2{
+.cta2 {
 	grid-area: cta2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #ux-page-feature{
 	display: inline-block;
@@ -166,7 +155,24 @@ nav a:focus{
 	font-size: 2em;
 	text-align: center;
 	display: inline;
-	padding-bottom: 1.75em;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding: 2em 1em;
+  }
+
+  @media (max-width: 700px) {
+	.top {
+	  grid-template-areas:
+		"cta1 cta2"
+	}
+	/* About */
+	.about {
+	  grid-template-columns: 1fr;
+	}
+  }
+  
+  @media (max-width: 500px) {
+	.top {
+	  grid-template-areas:
+		"cta1"
+		"cta2"
+	}
   }
