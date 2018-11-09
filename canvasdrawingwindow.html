@@ -35,14 +35,14 @@ body{
                         myGameArea.x = e.pageX;
                         myGameArea.y = e.pageY;
                     })
+                    window.addEventListener('touchmove', function (e) {
+                        myGameArea.x = e.touches[0].screenX;
+                        myGameArea.y = e.touches[0].screenY;
+                    })
 
                     window.addEventListener('keydown', function (e) {
                         console.log(e.keyCode);
                         myGameArea.key = e.keyCode;
-                    })
-                    window.addEventListener('touchmove', function (e) {
-                        myGameArea.x = e.touches[0].screenX;
-                        myGameArea.y = e.touches[0].screenY;
                     })
                 }, 
                 clear : function(){
@@ -69,9 +69,10 @@ body{
                     myBrush.x = myGameArea.x;
                     myBrush.y = myGameArea.y;        
                 }
-                if (myGameArea.touchX && myGameArea.touchY) {
-                    myBrush.x = myGameArea.x;
-                    myBrush.y = myGameArea.y;
+                // // TOUCH DRAWING
+                // if (myGameArea.touchX && myGameArea.touchY) {
+                //     myBrush.x = myGameArea.x;
+                //     myBrush.y = myGameArea.y;
                 // BLUE
                 if (myGameArea.key && myGameArea.key == 66) {myBrush.color = "#0B3775"; }
                 // RED
@@ -90,6 +91,10 @@ body{
                         myBrush.radius += 5;}
                 // CLEAR SCREEN
                 if (myGameArea.key && myGameArea.key == 32) {myGameArea.clear(); }
+                // TOUCH DRAWING
+                if (myGameArea.touchX && myGameArea.touchY) {
+                    myBrush.x = myGameArea.x;
+                    myBrush.y = myGameArea.y;}
                 myBrush.update();
             }
         </script>
