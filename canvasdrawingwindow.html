@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
@@ -14,84 +14,86 @@ body{
 <title>canvas</title>
 </head>
 <body onload="startGame()">
-    <script>
+    <main>
+        <script>
 
-        var myBrush;
+            var myBrush;
 
-        function startGame() {
-            myGameArea.start();
-            myBrush = new component(10, 100, 30, "#E22C3C");
-        }
-
-        var myGameArea = {
-            canvas : document.createElement("canvas"),
-            start : function() {
-                this.canvas.width = 480;
-                this.canvas.height = 270;
-                this.canvas.style.cursor = "none"; //hide the original cursor
-                this.context = this.canvas.getContext("2d");
-                document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-                this.interval = setInterval(updateGameArea, 20);
-                window.addEventListener('mousemove', function (e) {
-                    myGameArea.x = e.pageX;
-                    myGameArea.y = e.pageY;
-                })
-
-                window.addEventListener('keydown', function (e) {
-                    console.log(e.keyCode);
-                    myGameArea.key = e.keyCode;
-                })
-            }, 
-            clear : function(){
-                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            function startGame() {
+                myGameArea.start();
+                myBrush = new component(10, 100, 30, "#E22C3C");
             }
-        }
 
-        function component(x, y, radius, color){
-            this.x = x;
-            this.y = y;
-            this.radius = radius;
-            this.color = color;
-            this.update = function(){
-                ctx = myGameArea.context;
-                ctx.fillStyle = this.color;
-                ctx.arc(this.x, this.y, this.radius, 0, 2*Math.PI)
-                ctx.fill()
-                ctx.beginPath();
+            var myGameArea = {
+                canvas : document.createElement("canvas"),
+                start : function() {
+                    this.canvas.width = 480;
+                    this.canvas.height = 270;
+                    this.canvas.style.cursor = "none"; //hide the original cursor
+                    this.context = this.canvas.getContext("2d");
+                    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+                    this.interval = setInterval(updateGameArea, 20);
+                    window.addEventListener('mousemove', function (e) {
+                        myGameArea.x = e.pageX;
+                        myGameArea.y = e.pageY;
+                    })
+
+                    window.addEventListener('keydown', function (e) {
+                        console.log(e.keyCode);
+                        myGameArea.key = e.keyCode;
+                    })
+                }, 
+                clear : function(){
+                    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                }
             }
-        }    
-        function updateGameArea() {
-            // myGameArea.clear(); -- This clears the game area once you're ready to hit spacebar
-            if (myGameArea.x && myGameArea.y) {
-                myBrush.x = myGameArea.x;
-                myBrush.y = myGameArea.y;        
+
+            function component(x, y, radius, color){
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+                this.update = function(){
+                    ctx = myGameArea.context;
+                    ctx.fillStyle = this.color;
+                    ctx.arc(this.x, this.y, this.radius, 0, 2*Math.PI)
+                    ctx.fill()
+                    ctx.beginPath();
+                }
+            }    
+            function updateGameArea() {
+                // myGameArea.clear(); -- This clears the game area once you're ready to hit spacebar
+                if (myGameArea.x && myGameArea.y) {
+                    myBrush.x = myGameArea.x;
+                    myBrush.y = myGameArea.y;        
+                }
+                // BLUE
+                if (myGameArea.key && myGameArea.key == 66) {myBrush.color = "#0B3775"; }
+                // RED
+                if (myGameArea.key && myGameArea.key == 82) {myBrush.color = "#E22C3C"; }
+                // YELLOW
+                if (myGameArea.key && myGameArea.key == 89) {myBrush.color = "#FCF600"; }
+                // GREEN
+                if (myGameArea.key && myGameArea.key == 71) {myBrush.color = "#17C944"; }
+                // RADIUS DECREASE
+                if (myGameArea.key && myGameArea.key == 40) 
+                    {if (myBrush.radius > 5)
+                        myBrush.radius -= 5;}
+                // RADIUS INCREASE
+                if (myGameArea.key && myGameArea.key == 38) 
+                    {if (myBrush.radius < 30)
+                        myBrush.radius += 5;}
+                // CLEAR SCREEN
+                if (myGameArea.key && myGameArea.key == 32) {myGameArea.clear(); }
+                myBrush.update();
             }
-            // BLUE
-            if (myGameArea.key && myGameArea.key == 66) {myBrush.color = "#0B3775"; }
-            // RED
-            if (myGameArea.key && myGameArea.key == 82) {myBrush.color = "#E22C3C"; }
-            // YELLOW
-            if (myGameArea.key && myGameArea.key == 89) {myBrush.color = "#FCF600"; }
-            // GREEN
-            if (myGameArea.key && myGameArea.key == 71) {myBrush.color = "#17C944"; }
-            // RADIUS DECREASE
-            if (myGameArea.key && myGameArea.key == 40) 
-                {if (myBrush.radius > 5)
-                    myBrush.radius -= 5;}
-            // RADIUS INCREASE
-            if (myGameArea.key && myGameArea.key == 38) 
-                {if (myBrush.radius < 30)
-                    myBrush.radius += 5;}
-            // CLEAR SCREEN
-            if (myGameArea.key && myGameArea.key == 32) {myGameArea.clear(); }
-            myBrush.update();
-        }
-    </script>
-    <h1>Move the cursor inside the 800x500 pixel canvas to move a colored pen.</h1> 
-    <h2>Occasionally, you will need to click inside the canvas for the canvas controls to work.</h2>
-    <h3>You can alternate colors by hitting "b" for blue, "g" for green, "r" for red, and "y" for yellow.</h3>
-    <h3>You can also increase and decrease the circle size by using the up (larger) and down (smaller) arrow keys.</h3> 
-    <h3> You can clear the screen using space bar.</h3>
-    <h3>After clearing the screen, click one of the color keys (b, g, r, y) to continue drawing.</h3>
+        </script>
+        <h1>Move the cursor inside the 800x500 pixel canvas to move a colored pen.</h1> 
+        <h2>Occasionally, you will need to click inside the canvas for the canvas controls to work.</h2>
+        <h3>You can alternate colors by hitting "b" for blue, "g" for green, "r" for red, and "y" for yellow.</h3>
+        <h3>You can also increase and decrease the circle size by using the up (larger) and down (smaller) arrow keys.</h3> 
+        <h3> You can clear the screen using space bar.</h3>
+        <h3>After clearing the screen, click one of the color keys (b, g, r, y) to continue drawing.</h3>
+    </main>
 </body> 
 </html>
