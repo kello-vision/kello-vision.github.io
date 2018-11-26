@@ -1,0 +1,15 @@
+.container{
+	width: 95%;
+	margin:0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+}
+
+.container img{
+	width: 100%;
+}
+
+.item{
+	border: 2px solid black;
+}
