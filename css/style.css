@@ -71,6 +71,12 @@ img {
 	text-align: center;
 }
 
+.current{
+	font-family: 'Muli-Black', 'Helvetica-Bold', sans-serif;
+	color: #183D65;
+	text-decoration: underline;
+}
+
 /* Text Styles Go Here*/
 
 h1{
@@ -186,7 +192,7 @@ nav a:focus{
 .post {
 	display: grid;
 	max-width: 1000px;
-	margin: 200px auto;
+	margin: 120px auto;
 	grid-gap: 10px 50px;
 	grid-template-areas: ". writing .";
 }
@@ -205,6 +211,10 @@ nav a:focus{
 }
 
 .article-text{
+	text-align: left;
+}
+
+.post h2, h3{
 	text-align: left;
 }
 
@@ -257,6 +267,7 @@ figcaption {
 		"image5 image6"
 	  }
 
+	/* BLOG POST */
 	.post{
 		display: grid;
 		grid-template-areas:
@@ -311,6 +322,7 @@ figcaption {
 		"image6"
 	  }
 	 
+	/* BLOG POST   */
 	.post{
 		display: grid;
 		grid-template-areas:
