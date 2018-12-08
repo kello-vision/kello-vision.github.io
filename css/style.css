@@ -181,19 +181,39 @@ nav a:focus{
 	width: 100%;
 }
 
-/* BLOG POST STYLES */
+/* BLOG POST */
 
 .post {
 	display: grid;
 	max-width: 1000px;
 	margin: 200px auto;
 	grid-gap: 10px 50px;
-	grid-template-columns: 3fr 12fr 4fr 5fr;
+	grid-template-areas: ". writing .";
 }
 
 .post > *{
 	grid-column: 2/-2;
 }
+
+.post > figure{
+	margin: 0;
+	grid-column: 1/-1;
+}
+
+.post > p{
+	padding: .3em;
+}
+
+.post > p, h2, h3, ul, li {
+	text-align: left;
+}
+.post > h2{
+	padding: 1em;
+}
+figcaption {
+	text-align: left;
+}
+
 
   /* Font Awesome Classes And Style*/
 
@@ -235,6 +255,12 @@ nav a:focus{
 		"image3 image4"
 		"image5 image6"
 	  }
+
+	.post{
+		display: grid;
+		grid-template-areas:
+		". writing ."
+	}
   
   @media (max-width: 500px) {
 	/* GENERAL */
@@ -283,6 +309,12 @@ nav a:focus{
 		"image5" 
 		"image6"
 	  }
+	 
+	.post{
+		display: grid;
+		grid-template-areas:
+		"writing"
+	}
   }
 
   /* LANDSCAPE ORIENTATION FOR PHONES */
