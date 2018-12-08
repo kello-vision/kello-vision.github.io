@@ -181,6 +181,20 @@ nav a:focus{
 	width: 100%;
 }
 
+/* BLOG POST STYLES */
+
+.post {
+	display: grid;
+	max-width: 1000px;
+	margin: 200px auto;
+	grid-gap: 10px 50px;
+	grid-template-columns: 3fr 12fr 4fr 5fr;
+}
+
+.post > *{
+	grid-column: 2/-2;
+}
+
   /* Font Awesome Classes And Style*/
 
 #footer_fontawesome_icons li{
