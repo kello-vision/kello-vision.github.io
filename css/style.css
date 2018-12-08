@@ -204,9 +204,10 @@ nav a:focus{
 	padding: .3em;
 }
 
-.post > p, h2, h3, ul, li {
+.article-text{
 	text-align: left;
 }
+
 .post > h2{
 	padding: 1em;
 }
