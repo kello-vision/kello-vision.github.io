@@ -202,8 +202,7 @@ nav a:focus{
 }
 
 .post > figure{
-	margin: 0;
-	grid-column: 1/-1;
+	max-width: 100%;
 }
 
 .post > p{
@@ -214,6 +213,10 @@ nav a:focus{
 	text-align: left;
 }
 
+.article-heading1{
+	padding: 1em;
+	text-align: center;
+}
 .post h2, h3{
 	text-align: left;
 }
@@ -234,6 +237,8 @@ figcaption {
 	display: inline;
 	padding: 2em 1em;
   }
+
+  /* MEDIA QUERIES */
 
   @media (max-width: 700px) {
 	  /* GENERAL */
