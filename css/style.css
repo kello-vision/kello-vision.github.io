@@ -187,47 +187,6 @@ nav a:focus{
 	width: 100%;
 }
 
-/* BLOG POST */
-
-.post {
-	display: grid;
-	max-width: 1000px;
-	margin: 120px auto;
-	grid-gap: 10px 50px;
-	grid-template-areas: ". writing .";
-}
-
-.post > *{
-	grid-column: 2/-2;
-}
-
-.post > figure{
-	max-width: 100%;
-}
-
-.post > p{
-	padding: .3em;
-}
-
-.article-text{
-	text-align: left;
-}
-
-.article-heading1{
-	padding: 1em;
-	text-align: center;
-}
-.post h2, h3{
-	text-align: left;
-}
-
-.post > h2{
-	padding: 1em;
-}
-figcaption {
-	text-align: left;
-}
-
 
   /* Font Awesome Classes And Style*/
 
