@@ -137,7 +137,7 @@ a.skip-main {
 a.skip-main:focus, a.skip-main:active {
     color: #fff;
     background-color:#000;
-    left: auto;
+    left: 0px;		
     top: auto;
     width: 30%;
     height: auto;
@@ -236,7 +236,7 @@ nav a:focus{
 	font-size: 2em;
 	text-align: center;
 	display: inline;
-	padding: 2em 1em;
+	padding: 2em .3em;
   }
 
   /* MEDIA QUERIES */
