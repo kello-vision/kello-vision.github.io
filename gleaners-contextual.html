@@ -12,6 +12,8 @@
     <title>Gleaners-CI</title>
 </head>
 <body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <button onclick="toTheTop()" id = "return-to-top" title="Go to Top"><i class="fa fa-chevron-up"></i></button>
     <nav class = "main-nav">
         <ul>
             <li><a class = "current" href="gleaners-contextual.html">Gleaners Food Bank</a></li>
@@ -20,7 +22,7 @@
         </ul>
     </nav>
     <div class="header"><h1 class="article-heading1">Gleaners Community Food Bank of Detroit | Contextual Inquiry</h1></div>
-    <main>
+    <main id="main">
         <article>
             <div class="row">
                 <div class = "leftcolumn">
@@ -140,4 +142,22 @@
             </div>
         </article>
     </main>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("return-to-top").style.display = "block";
+            } else {
+            document.getElementById("return-to-top").style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function toTheTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
