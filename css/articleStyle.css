@@ -1,20 +1,25 @@
 /* BLOG POST */
 
+.blog{
+    display: grid;
+    grid-template-areas:
+    "writing"
+}
 
 .post {
-	display: grid;
+    display: grid;
+    justify-content: center;
+    grid-area: writing;
 	max-width: 1000px;
-	margin: 120px auto;
+	margin: 72px auto;
 	grid-gap: 10px 50px;
-	grid-template-areas: 
-	". writing ."
 }
 
 .post > *{
 	grid-column: 2/-2;
 }
 
-figure{
+img{
 	max-width: 100%;
 	overflow-x: hidden;
 }
@@ -47,22 +52,24 @@ ul{
    line-height: 32px;
 }
 
-figcaption {
-	text-align: left;
-}
-
 @media (max-width: 700px) {
-    .post{
-		display: grid;
-		grid-template-areas:
-        ". writing ."
+    .post {
+        display: grid;
+        max-width: 1000px;
+        margin: 72px auto;
+        grid-gap: 10px 50px;
+        justify-content: center;
+        grid-area: writing;
     }
 }
 
-@media (max-width: 500px) {
-    .post{
+@media all and (max-width: 500px) {
+    .post {
         display: grid;
-        grid-template-areas:
-        "writing"
+        max-width: 1000px;
+        margin: 72px auto;
+        grid-gap: 10px 50px;
+        justify-content: center;
+        grid-area: writing;
     }
 }

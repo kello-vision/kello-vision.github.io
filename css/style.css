@@ -213,7 +213,7 @@ nav a:focus{
     color: #fff;
     margin: 0;
     position: relative;
-    left: 1px;
+    left: 0px;
     top: 0px;
     font-size: 19px;
     -webkit-transition: all 0.3s ease;
