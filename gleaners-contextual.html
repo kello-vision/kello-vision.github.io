@@ -14,7 +14,8 @@
 <body>
     <a class="skip-main" href="#main">Skip to main content</a>
     <button onclick="toTheTop()" id = "return-to-top" title="Go to Top"><i class="fa fa-chevron-up"></i></button>
-    <nav class = "main-nav">
+    <nav class = "flex-nav">
+        <a href="#" class="toggleNav">&#9776; Menu</a>
         <ul>
             <li><a class = "current" href="gleaners-contextual.html">Gleaners Food Bank</a></li>
             <li><a href = "ux-design.html">Back to UX Design</a></li>
@@ -159,5 +160,15 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        
+        $(function() {
+        $('.toggleNav').on('click',function() {
+            $('.flex-nav ul').toggleClass('open');
+        });
+        });
+    
     </script>
 </body>
