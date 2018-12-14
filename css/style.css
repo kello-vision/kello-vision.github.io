@@ -3,6 +3,14 @@
 	padding: 0px;
 }
 
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 img {
 	max-width: 100%;
   }
@@ -12,6 +20,7 @@ img {
 .wrapper{
 	display: grid;
 	grid-gap: 20px;
+	padding: 40px;
 }
 
 .top-home {
@@ -74,6 +83,24 @@ img {
 	font-family: 'Muli-Black', 'Helvetica-Bold', sans-serif;
 	color: #183D65;
 	text-decoration: underline;
+}
+
+/* NAVIGATION */
+
+.toggleNav{
+	display: none;
+}
+
+.flex-nav ul {
+	border: 1px solid black;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.flex-nav li {
+	flex: 1;
 }
 
 /* Text Styles Go Here*/
@@ -163,6 +190,7 @@ nav a{
 	color:#24262f;
 	letter-spacing:0;
 	text-align:center;
+	display: inline-block;
 }
 
 nav a:active{
@@ -241,10 +269,20 @@ nav a:focus{
 
   /* MEDIA QUERIES */
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
 	  /* GENERAL */
 	  .hero {
 		grid-template-columns: 1fr;
+	}
+
+	/* NAVIGATION */
+
+	.flex-nav ul {
+		flex-wrap: wrap;
+	}
+
+	.flex-nav li {
+		flex: 1 1 50%;
 	}
 
 	.hero h1{
@@ -288,6 +326,24 @@ nav a:focus{
 	}
 	.hero h1{
 		font-size: 22px;
+	}
+
+	/* NAVIGATION */
+
+	.flex-nav li {
+		flex-basis: 100%;
+	}
+
+	.toggleNav{
+		display: block;
+	}
+
+	.flex-nav ul {
+		display: none;
+	}
+
+	.flex-nav ul.open {
+		display: flex;
 	}
 
 	.main-nav ul{

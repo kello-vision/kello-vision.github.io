@@ -13,7 +13,8 @@
 <body>
     <a class="skip-main" href="#main">Skip to main content</a>
     <div class = "wrapper">
-        <nav class ="main-nav">
+        <nav class ="flex-nav">
+            <a href="#" class="toggleNav">&#9776; Menu</a>
             <ul>
                 <li><a class="current" href = "index.html">Home</a></li>
                 <li><a href = "ux-design.html">UX Design</a></li>
@@ -54,5 +55,15 @@
             </ul>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      
+      $(function() {
+        $('.toggleNav').on('click',function() {
+          $('.flex-nav ul').toggleClass('open');
+        });
+      });
+  
+    </script>
 </body>
 </html>
