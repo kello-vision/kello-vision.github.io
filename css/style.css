@@ -85,6 +85,19 @@ img {
 	text-decoration: underline;
 }
 
+.controls{
+	padding: 20px 0px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+button {
+	font-size: 100%;
+	font-family: inherit;
+	border: 2px solid black;
+	padding: .5em;
+}
+
 /* NAVIGATION */
 
 .toggleNav{
