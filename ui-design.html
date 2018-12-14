@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/lightbox.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> 
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>ui-design</title>
 </head>
 <body>
@@ -28,6 +29,11 @@
             <h1>User Interface Design</h1>
         </header>
         <main id = "main">
+            <div class="controls">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".mobile">Mobile</button>
+                <button type="button" data-filter=".web">Web</button>
+            </div>
             <div class="gallery">
                 <a href="images/02gallery-images/settingspage_w.jpg" data-lightbox="uiDesign-set" data-title="Settings Screen Design"class="mix mobile"><img src="images/02gallery-images/settingspage_w.jpg" alt="Settings page design"></a>
                 <a href="images/02gallery-images/cccheckout_w.jpg" data-lightbox="uiDesign-set" data-title="Credit Card Checkout Screen Design"class="mix mobile"><img src="images/02gallery-images/cccheckout_w.jpg" alt = "Credit card checkout"></a>
@@ -55,6 +61,11 @@
         </footer>
     </div>
     <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.gallery');
+        var mixer = mixitup(containerEl);
+    </script>
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};
