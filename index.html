@@ -12,6 +12,7 @@
 </head>
 <body>
     <a class="skip-main" href="#main">Skip to main content</a>
+    <button onclick="toTheTop()" id = "return-to-top" title="Go to Top"><i class="fa fa-chevron-up"></i></button>
     <div class = "wrapper">
         <nav class ="flex-nav">
             <a href="#" class="toggleNav">&#9776; Menu</a>
@@ -24,13 +25,13 @@
         <main id = "main">
             <header class = "hero-text">
                 <h1>
-                    Hi there, I'm Kelly. I am a UI/UX Designer who designs elegant and user-centered websites, apps, and systems that make a positive impact in the lives of those who use them.
+                    Hi there, I'm Kelly. I'm a UI/UX Designer passionate about using design to bring people closer to their goals.
                 </h1>
             </header>
             <section>
                 <div>
                     <div>
-                        <h2>Experience Design</h2>
+                        <h2 class="main-heading2">Experience Design</h2>
                     </div>
                     <div class="work-grid">
                         <div class="work-item">
@@ -54,7 +55,7 @@
                     </div>
                 </div>
                     <div>
-                        <h2>Interface/Visual Design</h2>
+                        <h2 class="main-heading2">Interface/Visual Design</h2>
                     </div>
                     <div class="work-grid">
                         <div class="work-item">
@@ -97,5 +98,21 @@
       });
   
     </script>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("return-to-top").style.display = "block";
+                } else {
+                document.getElementById("return-to-top").style.display = "none";
+                }
+            }
+    
+            function toTheTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
 </body>
 </html>

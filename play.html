@@ -13,6 +13,7 @@
 </head>
 <body>
     <a class="skip-main" href="#main">Skip to main content</a>
+    <button onclick="toTheTop()" id = "return-to-top" title="Go to Top"><i class="fa fa-chevron-up"></i></button>
     <div class = "wrapper">
         <nav class ="flex-nav">
             <a href="#" class="toggleNav">&#9776; Menu</a>
@@ -30,7 +31,7 @@
             </header>
             <section>
                 <div>
-                    <h2 class="play-heading2">Video</h2>
+                    <h2 class="main-heading2">Video</h2>
                 </div>
                 <div class="work-grid-iframe">
                     <div class="work-item">
@@ -56,13 +57,13 @@
                         <a href="images/02gallery-images/catering1.jpeg" data-lightbox="uiDesign-set" data-title="Documenting a catering company's behind the scenes" class="mix mobile"><img src="images/02gallery-images/catering1.jpeg" alt = "Caterer fixes cake"></a>
                     </div>
                     <div class="cell">
-                        <a href="images/02gallery-images/adamdrum1.jpeg" data-lightbox="uiDesign-set" data-title="Adam Phelps, drummer for Robert DeLong" class="mix mobile"><img src="images/02gallery-images/adamdrum1.jpeg" alt = "drummer drumming"></a>
+                        <a href="images/02gallery-images/mountainbros1.jpg" data-lightbox="uiDesign-set" data-title="Perspective" class="mix mobile"><img src="images/02gallery-images/mountainbros1.jpg" alt = "two men looking at the view of a mountain"></a>
                     </div>
                     <div class="cell">
                         <a href="images/02gallery-images/determination.jpeg" data-lightbox="uiDesign-set" data-title="Determination" class="mix mobile"><img src="images/02gallery-images/determination.jpeg" alt = "Baby climbing onto a tractor"></a>
                     </div>
                     <div class="cell">
-                        <a href="images/02gallery-images/mountainbros1.jpg" data-lightbox="uiDesign-set" data-title="Perspective" class="mix mobile"><img src="images/02gallery-images/mountainbros1.jpg" alt = "Two men looking out from the top of a mountain"></a>
+                        <a href="images/02gallery-images/adamdrum1.jpeg" data-lightbox="uiDesign-set" data-title="Adam Phelps, drummer for Robert DeLong" class="mix mobile"><img src="images/02gallery-images/adamdrum1.jpeg" alt = "drummer drumming"></a>
                     </div>
                     <div class="cell">
                         <a href="images/02gallery-images/ocean1.jpg" data-lightbox="uiDesign-set"  data-title="Ocean view" class="mix web"><img src="images/02gallery-images/ocean1.jpg" alt = "View of the ocean and some shoreline rocks"></a>
@@ -101,6 +102,22 @@
         });
       });
   
+    </script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("return-to-top").style.display = "block";
+            } else {
+            document.getElementById("return-to-top").style.display = "none";
+            }
+        }
+
+        function toTheTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 </html>

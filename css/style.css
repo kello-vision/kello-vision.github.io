@@ -121,6 +121,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-top: 40px;
 }
 
 .cell{
@@ -144,7 +145,7 @@ h1{
 }
 
 h2{
-	padding: .5em;
+	padding: .75em;
 	font-family: 'GlacialIndifferenceBold', Helvetica, sans-serif;
 	font-size:30px;
 	color:#24262f;
@@ -152,7 +153,7 @@ h2{
 	text-align:left;
 }
 
-.play-heading2{
+.main-heading2{
 	padding-top: 56px;
 	padding-bottom: 56px;
 }
@@ -178,7 +179,7 @@ p{
 	text-align:left;
 	line-height:24px;
 	line-height: 24px; 
-	padding: 2em;
+	padding: 1.4em;
 }
 
 /* Anchor Links */
@@ -239,12 +240,6 @@ nav a:focus{
 }
 
 /* UI-DESIGN-GALLERY CLASSES */
-
-.hero {
-	display: grid;
-	padding: 80px;
-	justify-content: center;
-}
 
 .ui-container {
 	display: flex;
