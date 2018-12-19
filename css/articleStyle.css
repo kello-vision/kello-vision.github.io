@@ -47,7 +47,31 @@ ul{
     padding: 20px;
     margin-top: 20px;
  }
- 
+
+ /* FLEXBOX ARTICLES */
+
+ .article-container {
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/* align-items: center; */
+}
+
+.article-item{
+	background: #EAEAEA;
+	margin: 8px;
+	/* padding: 20px; */
+	border-radius: 4px;
+	text-align: left;
+
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
  /* Clear floats after the columns */
  .row:after {
    content: "";
