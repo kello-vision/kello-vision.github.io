@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+    <title>play</title>
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class = "wrapper">
+        <nav class ="flex-nav">
+            <a href="#" class="toggleNav">&#9776; Menu</a>
+            <ul>
+                <li><a href = "index.html">Work</a></li>
+                <li><a class="current" href = "ux-design.html">Play</a></li>
+                <li><a href = "contact.html">Get in Touch</a></li>
+            </ul>
+        </nav>
+        <main id = "main">
+            <header class = "hero-text">
+                <h1>
+                    Storytelling is a big part of experience design for me. I've found that exploring other means of communication has helped me grow as a designer.
+                </h1>
+            </header>
+            <section>
+                <div>
+                    <h2 class="play-heading2">Video</h2>
+                </div>
+                <div class="work-grid-iframe">
+                    <div class="work-item">
+                        <iframe src="https://player.vimeo.com/video/305499806" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+                    </div>
+                </div>
+                <div class="work-grid-iframe">
+                    <div class="work-item">
+                        <iframe src="https://player.vimeo.com/video/298184264" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="play-heading2">Photography</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="cell">
+                        <a href="images/02gallery-images/biggigantic.jpeg" data-lightbox="uiDesign-set" data-title="Big Gigantic show" class="mix mobile"><img src="images/02gallery-images/biggigantic.jpeg" alt="Big Gigantic concert"></a>
+                    </div>
+                    <div class="cell">
+                        <a href="images/02gallery-images/waterfall1.jpg" data-lightbox="uiDesign-set" data-title="Ramona Falls" class="mix mobile"><img src="images/02gallery-images/waterfall1.jpg" alt = "Ramona Falls waterfall"></a>
+                    </div>
+                    <div class="cell">
+                        <a href="images/02gallery-images/catering1.jpeg" data-lightbox="uiDesign-set" data-title="Documenting a catering company's behind the scenes" class="mix mobile"><img src="images/02gallery-images/catering1.jpeg" alt = "Caterer fixes cake"></a>
+                    </div>
+                    <div class="cell">
+                        <a href="images/02gallery-images/adamdrum1.jpeg" data-lightbox="uiDesign-set" data-title="Adam Phelps, drummer for Robert DeLong" class="mix mobile"><img src="images/02gallery-images/adamdrum1.jpeg" alt = "drummer drumming"></a>
+                    </div>
+                    <div class="cell">
+                        <a href="images/02gallery-images/determination.jpeg" data-lightbox="uiDesign-set" data-title="Determination" class="mix mobile"><img src="images/02gallery-images/determination.jpeg" alt = "Baby climbing onto a tractor"></a>
+                    </div>
+                    <div class="cell">
+                        <a href="images/02gallery-images/mountainbros1.jpg" data-lightbox="uiDesign-set" data-title="Perspective" class="mix mobile"><img src="images/02gallery-images/mountainbros1.jpg" alt = "Two men looking out from the top of a mountain"></a>
+                    </div>
+                    <div class="cell">
+                        <a href="images/02gallery-images/ocean1.jpg" data-lightbox="uiDesign-set"  data-title="Ocean view" class="mix web"><img src="images/02gallery-images/ocean1.jpg" alt = "View of the ocean and some shoreline rocks"></a>
+                    </div>
+                    <div class="cell">
+                        <a href="images/02gallery-images/pdubthegreat.jpeg" data-lightbox="uiDesign-set"  data-title="Different Perspective" class="mix web"><img src="images/02gallery-images/pdubthegreat.jpeg" alt = "A man looking out of frame"></a>
+                    </div>
+                    <div class="cell">
+                        <a href="images/02gallery-images/snodin.jpeg" data-lightbox="uiDesign-set"  data-title="Winter morning with Odin" class="mix web"><img src="images/02gallery-images/snodin.jpeg" alt = "A dog looks toward the camera"></a>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <ul id ="footer_fontawesome_icons">
+                <li><a href = "https://www.linkedin.com/in/kelly-o-sullivan-b2305256/" aria-label="link to Kelly's LinkedIn">
+                    <i aria-hidden="true" class = "fab fa-linkedin"></i>
+                </a></li>
+                <li><a href = "https://www.instagram.com/kello_vision/" aria-label="link to Kelly's Instagram">
+                    <i aria-hidden="true" class = "fab fa-instagram"></i>
+                </a></li>
+                <li><a href = "https://vimeo.com/user12530027" aria-label="link to Kelly's Vimeo">
+                    <i aria-hidden="true" class = "fab fa-vimeo"></i>
+                </a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      
+      $(function() {
+        $('.toggleNav').on('click',function() {
+          $('.flex-nav ul').toggleClass('open');
+        });
+      });
+  
+    </script>
+</body>
+</html>
