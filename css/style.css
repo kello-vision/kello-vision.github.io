@@ -173,6 +173,10 @@ h3{
 	padding-bottom: 2em;
 }
 
+.writing-h3{
+	padding: 1.2em;
+}
+
 body{
 	background-color:#FBFCFF;
 	text-align: left;
