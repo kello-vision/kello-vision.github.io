@@ -136,7 +136,7 @@ img {
 /* Text Styles Go Here*/
 
 h1{
-	font-family: 'GlacialIndifferenceBold', Helvetica, sans-serif;
+	font-family: 'Poppins', Helvetica, sans-serif;
 	font-size:48px;
 	color:#24262f;
 	letter-spacing:0;
@@ -146,7 +146,7 @@ h1{
 
 h2{
 	padding: .75em;
-	font-family: 'GlacialIndifferenceBold', Helvetica, sans-serif;
+	font-family: 'Poppins', Helvetica, sans-serif;
 	font-size:30px;
 	color:#24262f;
 	letter-spacing:0;
@@ -161,7 +161,7 @@ h2{
 
 h3{
 	padding: .75em;
-	font-family: 'GlacialIndifferenceBold', Helvetica, sans-serif;
+	font-family: 'Poppins', Helvetica, sans-serif;
 }
 
 .card-h3{
@@ -171,11 +171,11 @@ h3{
 body{
 	background-color:#FBFCFF;
 	text-align: left;
-	font-family: 'GlacialIndifferenceRegular', Helvetica, sans-serif;
+	font-family: 'Poppins', Helvetica, sans-serif;
 }
 
 p{
-	font-family: 'GlacialIndifferenceRegular'; 
+	font-family: 'Poppins'; 
 	font-weight: normal; 
 	font-style: normal;
 	font-size:16px;
