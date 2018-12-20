@@ -166,6 +166,8 @@ h3{
 
 .card-h3{
 	padding: 1.2em;
+	font-family: 'Poppins';
+	font-weight: 'Light';
 }
 
 .article-h3{
@@ -198,6 +200,18 @@ p{
 
 .card-p{
 	padding: .75em;
+}
+
+.light{
+	font-weight: 300;
+}
+
+.medium{
+	font-weight: 500;
+}
+
+.ultraLight{
+	font-weight: 100;
 }
 
 /* Anchor Links */
