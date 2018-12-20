@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C400i%2C500%2C500i%2C700%2C700i&#038;ver=4.9.8' type='text/css' media='all' />
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>ui-design</title>
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>      
+    <button onclick="toTheTop()" id = "return-to-top" title="Go to Top"><i class="fa fa-chevron-up"></i></button>
+    <div class = "wrapper">
+        <nav class ="flex-nav">
+            <a href="#" class="toggleNav">&#9776; Menu</a>
+            <ul>
+                <li><a class="current" href = "interaction-animations.html">Interaction Animations</a></li>
+                <li><a href = "index.html">Work</a></li>
+                <li><a href = "contact.html">Get in Touch</a></li>
+            </ul>
+        </nav>
+        <header class = "hero-text">
+            <h1>Compostable: Design Prototype</h1>
+        </header>
+        <h2 class="main-heading2">Click through my medium fidelity prototype <a href="https://xd.adobe.com/view/3c3b77d2-74dc-4d55-80fb-de8fda16055a/">here!</a></h2>
+        <h2 class="main-heading2">Design Problem Context</h2>
+        <p>As part of my Intro to Interaction Design course at the University of Michigan, my classmates and I were directed to brainstorm possible solutions to problems experienced by a particular neighborhood. I had spent a good portion of my life in Ann Arbor, and so I chose to focus on a problem that a deep level of understanding of the community had made me privy to. Ann Arbor may not be a huge community, but it is a vibrant one and as such is an area that produces a high volume of compostable waste through businesses and restaurants. In the end, my solution became creating a mobile application that allows user to simultaneously find farms or composters that they can donate compostable waste to; as well as discover local places that they can buy healthy produce, dairy, or meat at. </p>
+        <h2 class="main-heading2">Tools</h2>
+        <p>For this project, I made use of a variety of tools in order to develop an interactive system I thought would most effectively divert waste from businesses and restaurants to the compost piles that need their compostable matter.</p>
+        <h3>Competitive Analysis</h3>
+        <img src="images/03article-images/compostable-comp-analysis.jpg" alt="Competitive analysis of other compost businesses">
+        <h3>Sketches/Storyboards</h3>
+        <img src="images/03article-images/compostable-storyboards.jpeg" alt="Storyboards illustrating compost business ideas">
+        <h3>Personas</h3>
+        <div class="gallery-grid">
+            <div class="cell">
+                <a href="images/03article-images/compostable-personas1.png" data-lightbox="uiDesign-set" data-title="Kris: Farmer and Food Waste Warrior" class="mix mobile"><img src="images/03article-images/compostable-personas1.png" alt="First Compostable persona"></a>
+            </div>
+            <div class="cell">
+                <a href="images/03article-images/compostable-personas2.png" data-lightbox="uiDesign-set" data-title="Joanna: Restauranteur" class="mix mobile"><img src="images/03article-images/compostable-personas2.png" alt="Second Compostable persona"></a>
+            </div>
+            <div class="cell">
+                <a href="images/03article-images/compostable-personas3.png" data-lightbox="uiDesign-set" data-title="Ayane: Tech Entrepreneur" class="mix mobile"><img src="images/03article-images/compostable-personas3.png" alt="Third Compostable persona"></a>
+            </div>
+            <div class="cell">
+                <a href="images/03article-images/compostable-personas4.png" data-lightbox="uiDesign-set" data-title="Craig and Sheryl: Working Power Couple" class="mix mobile"><img src="images/03article-images/compostable-personas4.png" alt="Fourth Compostable persona"></a>
+            </div>
+        </div>
+        <h3>Storymap</h3>
+        <img src="images/03article-images/compostable-storymap.png" alt="Compostable Storymap">
+        <h3>Solution</h3>
+        <p>After these tools were developed I was able to implement my solution as a mobile application that matches businesses/restaurants with farmers who want to make use of their compostable waste. Think of it like Tinder, except for farmers!</p>
+    </div>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("return-to-top").style.display = "block";
+            } else {
+            document.getElementById("return-to-top").style.display = "none";
+            }
+        }
+
+        function toTheTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
