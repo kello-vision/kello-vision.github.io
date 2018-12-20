@@ -113,7 +113,7 @@ img {
 
 .work-item .cta{
 	align-self: flex-end;
-	padding: 16px;
+	padding: 1.4em;
 }
 
 /* IMAGE GALLERY */
@@ -164,6 +164,10 @@ h3{
 	font-family: 'GlacialIndifferenceBold', Helvetica, sans-serif;
 }
 
+.card-h3{
+	padding: 1.2em;
+}
+
 body{
 	background-color:#FBFCFF;
 	text-align: left;
@@ -181,6 +185,10 @@ p{
 	line-height:24px;
 	line-height: 24px; 
 	padding: 1.4em;
+}
+
+.card-p{
+	padding: .75em;
 }
 
 /* Anchor Links */
@@ -322,10 +330,14 @@ nav a:focus{
 		padding-right: 20px;
 	}
 
-	/* NAVIGATION */
+	/* TYPE */
 
 	.hero-text h1{
 		font-size: 40px;
+	}
+
+	.main-heading2{
+		font-size: 24px;
 	}
 
 	/* IMAGE GALLERY */
@@ -368,8 +380,15 @@ nav a:focus{
 	.hero {
 		grid-template-columns: 1fr;
 	}
+
+	/* TYPE */
+
 	.hero-text h1{
 		font-size: 22px;
+	}
+
+	.main-heading2{
+		font-size: 18px;
 	}
 
 	/* NAVIGATION */
