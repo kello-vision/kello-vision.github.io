@@ -64,7 +64,6 @@ img {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	/* align-items: center; */
 }
 
 .work-grid-iframe{
@@ -73,7 +72,6 @@ img {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	/* align-items: center; */
 	position: relative;
 	padding-bottom: 56.25%;
 	height: 0;
@@ -160,12 +158,12 @@ h2{
 }
 
 h3{
-	padding: .75em;
+	/* padding: .75em; */
 	font-family: 'Poppins', Helvetica, sans-serif;
 }
 
 .card-h3{
-	padding: 1.2em;
+	padding-left: 1.2em;
 	font-family: 'Poppins';
 	font-weight: 'Light';
 }
