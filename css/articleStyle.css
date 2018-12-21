@@ -17,10 +17,6 @@ img{
 	text-align: center;
 }
 
-.leftcolumn > h2{
-    text-align: left;
-}
-
 ul{
    list-style-type: disc; 
    padding-left: 3rem;
@@ -34,6 +30,20 @@ ul{
     width: 75%;
   }
 
+.leftcolumn > h2{
+    text-align: left;
+}
+
+.leftcolumn h3{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.2em;
+}
+
+.leftcolumn p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
 .rightcolumn {
     float: left;
