@@ -437,6 +437,11 @@ nav a:focus{
 		max-width: 100%;
 		overflow: hidden;
 	}
+
+	nav a{
+		padding: 1.75em 1em;
+	}
+
 	/* IMAGE GALLERY */
 	.gallery-grid{
 		display: flex;
