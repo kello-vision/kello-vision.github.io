@@ -29,6 +29,10 @@ img {
 	width: 100%;
 }
 
+figcaption{
+	padding-bottom: 3em;
+}
+
 /* GENERAL */
 
 .wrapper{
