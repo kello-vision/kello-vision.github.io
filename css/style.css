@@ -107,6 +107,7 @@ figcaption{
 	text-align: left;
 	box-shadow: 0 2px 2px rgba(0,0,0,0.06), 
 		0 0 2px 1px rgba(0,0,0,0.03);
+	min-width: 200px;
 
 	flex: 1;
 	display: flex;
@@ -162,6 +163,7 @@ h2{
 	color:#24262f;
 	letter-spacing:0;
 	text-align:left;
+	hyphens: auto;
 }
 
 .main-heading2{
