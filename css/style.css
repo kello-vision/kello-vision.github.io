@@ -145,6 +145,10 @@ figcaption{
 	display: block;
 }
 
+.animation-fig{
+	cursor: pointer;
+}
+
 /* Text Styles Go Here*/
 
 h1{
