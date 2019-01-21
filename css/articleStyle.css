@@ -18,74 +18,15 @@ img{
   max-width: 100%;
 }
 
-.leftcolumn {   
-    float: left;
-    width: 75%;
-  }
+/* Text Styles Go Here*/
 
-.leftcolumn > h2{
-    text-align: left;
+@font-face { font-family: CooperHewitt; src: url(fonts/CooperHewitt-Medium.otf); } 
+
+h1{
+	font-family: 'CooperHewitt', Helvetica, sans-serif;
+	font-size:48px;
+	color:#24262f;
+	letter-spacing:0;
+	text-align:left;
+	line-height:56px;
 }
-
-.leftcolumn h3{
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  padding-left: 1.2em;
-}
-
-.leftcolumn p {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
-
-  /* Add a card effect for articles */
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
- }
-
- /* FLEXBOX ARTICLES */
-
- .article-container {
-	max-width: 900px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	/* align-items: center; */
-}
-
-.article-item{
-	background: #EAEAEA;
-	margin: 8px;
-	/* padding: 20px; */
-	border-radius: 4px;
-	text-align: left;
-
-	flex: 1;
-	display: flex;
-	flex-wrap: wrap;
-
-}
-
- /* Clear floats after the columns */
- .row:after {
-   content: "";
-   display: table;
-   clear: both;
- }
-
- @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-      overflow: hidden;
-    }
-  }

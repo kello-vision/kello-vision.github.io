@@ -14,7 +14,7 @@ html {
 body{
 	background-color:#FFFFFF;
 	text-align: left;
-	font-family: 'Poppins', Helvetica, sans-serif;
+	font-family: 'Roboto', Helvetica, sans-serif;
 
 }
 
@@ -28,6 +28,19 @@ img {
 
 .image {
 	width: 100%;
+}
+
+.article-hero-image{
+	padding-top: 5em;
+}
+
+.article-body-image{
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.06), 
+	0 0 2px 1px rgba(0,0,0,0.03);
 }
 
 figcaption{
@@ -53,14 +66,10 @@ figcaption{
 }
 
 .current{
-	font-family: 'Poppins', 'Helvetica-Bold', sans-serif;
+	font-family: 'Roboto', 'Helvetica-Bold', sans-serif;
 	color: #183D65;
 	text-decoration: underline;
-	font-weight: 800;
-}
-
-.hero-text{
-	padding: 96px 16px;
+	font-weight: 700;
 }
 
 /* NAVIGATION */
@@ -133,11 +142,6 @@ figcaption{
 	object-fit: cover;
 }
 
-.work-item .cta{
-	align-self: flex-end;
-	padding: 1.4em;
-}
-
 /* IMAGE GALLERY */
 .gallery-grid {
 	display: flex;
@@ -163,23 +167,70 @@ figcaption{
 
 /* Text Styles Go Here*/
 
+
 h1{
-	font-family: 'Poppins', Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size:48px;
+	font-weight: 500;
 	color:#24262f;
 	letter-spacing:0;
 	text-align:left;
 	line-height:56px;
 }
 
+.hero-text{
+	padding-top: 96px;
+	padding-bottom: 16px;
+	padding-left: 1.5em;
+}
+
+.home-page-hero{
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+
+.sub-title{
+	font-family: 'Roboto', sans-serif;
+	font-size:18px;
+	font-weight: 400;
+	color:#9B9B9B;
+	letter-spacing:0;
+	text-align:left;
+	text-transform: uppercase;
+	line-height:32px;
+}
+
+.glance-sub-title{
+	font-family: 'Roboto', sans-serif;
+	font-size:18px;
+	font-weight: 500;
+	color:rgb(0, 0, 0);
+	letter-spacing:0;
+	text-align:left;
+	text-transform: uppercase;
+	line-height:32px;
+}
+
 h2{
-	padding: .75em;
-	font-family: 'Poppins', Helvetica, sans-serif;
-	font-size:30px;
+	padding-top: .75em;
+	padding-bottom: .75em;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-size:36px;
+	font-weight: 300;
 	color:#24262f;
 	letter-spacing:0;
 	text-align:left;
+	line-height: 56px;
 	hyphens: auto;
+	max-width: 100%;
+}
+
+.card-h2{
+	font-size: 18px;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	padding-left: 1.5em;
+	font-weight: 500;
 }
 
 .main-heading2{
@@ -188,41 +239,63 @@ h2{
 	line-height: 40px;
 }
 
+.article-h2{
+	padding-left: .75em;
+}
+
 h3{
 	/* padding: .75em; */
-	font-family: 'Poppins', Helvetica, sans-serif;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-weight: 400;
+	font-size:24px;
+	line-height: 40px;
+}
+
+.gallery-h3{
+	padding-top:3em;
+	padding-bottom:3em;
+	padding-left:1.5em;
 }
 
 .card-h3{
-	padding-left: 1.2em;
-	font-family: 'Poppins';
-	font-weight: 'Light';
+	font-size: 16px;
+	padding-left: 1.75em;
+	font-family: 'Roboto';
+	font-weight: 400;
+	line-height: 24px;
 }
 
 .article-h3{
-	padding-top: 2em;
-	padding-bottom: 2em;
-	padding-left: 1.2em;
+	padding:1.2em;
 }
 
-.writing-h3{
-	padding: 1.2em;
-}
 
 p{
-	font-family: 'Poppins'; 
-	font-weight: normal; 
+	font-family: 'Roboto'; 
+	font-weight: 400; 
 	font-style: normal;
-	font-size:16px;
-	color:#24262f;
+	font-size:18px;
+	color:#4A4A4A;
 	letter-spacing:0;
 	text-align:left;
-	line-height:24px;
-	padding: 1.4em;
+	line-height:32px;
+	padding-left: 1.5em;
+	padding-top: .75em;
+	padding-bottom: .75em;
 }
 
-.card-p{
-	padding: .75em;
+
+.work-item .cta{
+	font-size: 12px;
+	align-self: flex-end;
+	padding-bottom: 1.8em;
+	padding-top: 1em;
+	padding-left: 2.5em;
+
+}
+
+.article-text{
+	text-align: left;
 }
 
 .light{
@@ -235,6 +308,10 @@ p{
 
 .ultraLight{
 	font-weight: 100;
+}
+
+.bold{
+	font-weight: 700;
 }
 
 /* Anchor Links */
@@ -277,7 +354,7 @@ nav a:hover{
 nav a{
 	padding: 1.75em 2.5em;
 	text-decoration: none;
-	font-family: 'Poppins', Helvetica, sans-serif;
+	font-family: 'Roboto', Helvetica, sans-serif;
 	font-size:18px;
 	font-weight: 300;
 	color:#24262f;
@@ -383,6 +460,17 @@ nav a:focus{
 		font-size: 40px;
 	}
 
+	.home-page-hero h1{
+		font-size: 30px;
+		padding-left: 36px;
+		padding-right: 36px;
+	}
+
+	h2{
+		font-size: 24px;
+		padding-left: 1.2em;
+	}
+
 	.main-heading2{
 		font-size: 24px;
 	}
@@ -422,6 +510,16 @@ nav a:focus{
 
 	.work-grid{
 		flex-direction: column;
+	}
+
+	.home-page-hero h1{
+		padding-left: 8px;
+		padding-right: 8px;
+		font-size: 20px;
+	}
+
+	h2{
+		font-size: 20px;
 	}
 
 	.hero {
